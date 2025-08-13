@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import About from "./components/About";
-// import Skills from "./components/Skills";
+import Skills from "./components/Skills";
+import Career from "./components/Career";
 // import Projects from "./components/Projects";
 // import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
@@ -13,7 +14,8 @@ function App() {
 			<Header />
 			<main>
 				<About />
-				{/* <Skills /> */}
+				<Skills />
+				<Career />
 				{/* <Projects /> */}
 				{/* <Contact /> */}
 			</main>
