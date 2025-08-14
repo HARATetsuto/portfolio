@@ -4,7 +4,7 @@ import Skills from "./components/Skills";
 import Career from "./components/Career";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import "./styles/global.css";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
 				<Projects />
 				<Contact />
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }
