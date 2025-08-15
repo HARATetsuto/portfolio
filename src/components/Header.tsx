@@ -1,9 +1,16 @@
 import React from "react";
+import LogoIcon from '../assets/my-icon.svg?react';
 
 const Header: React.FC = () => {
 	return (
 		<header>
-			<h1>Tetsu's portfolio</h1>
+			<h1>
+				<a href="/" id="header-title">
+					<LogoIcon />
+					<span>Tetsu's portfolio</span>
+				</a>
+			</h1>
+
 			<nav>
 				<ul>
 					<li><a href="#about">About</a></li>
