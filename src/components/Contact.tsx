@@ -28,18 +28,20 @@ const Contact = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
+    <section id="contact">
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name="user_name" />
 
-      <label>Your Email</label>
-      <input type="email" name="user_email" />
+        <label>Your Email</label>
+        <input type="email" name="user_email" />
 
-      <label>Message</label>
-      <input type="message" />
+        <label>Message</label>
+        <input type="message" />
 
-      <input type="submit" value="Send" />
-    </form>
+        <input type="submit" value="Send" />
+      </form>
+    </section>
   )
 }
 
