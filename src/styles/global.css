@@ -1,0 +1,54 @@
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  overflow-y: scroll;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.5);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  /* positioning */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin-right: 200px;
+  /* fontsize */
+  font-size: x-large;
+}
+
+#header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1.0rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+#home {
+  background: #f0f0f0;
+}
+
+#about {
+  background: #e0e0e0;
+}
+
+#skills {
+  background: #d0d0d0;
+}
