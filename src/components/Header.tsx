@@ -6,7 +6,7 @@ const Header: React.FC = () => {
 		<header>
 			<h1>
 				<a href="/" id="header-title">
-					<LogoIcon />
+					<LogoIcon width={100} height={100}/>
 					<span>Tetsu's portfolio</span>
 				</a>
 			</h1>
