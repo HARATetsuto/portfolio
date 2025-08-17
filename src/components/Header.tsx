@@ -2,11 +2,12 @@ import React from "react";
 import LogoIcon from '../assets/my-icon.svg?react';
 
 const Header: React.FC = () => {
+	const ICON_SIZE = 100;
 	return (
 		<header>
 			<h1>
 				<a href="/" id="header-title">
-					<LogoIcon width={100} height={100}/>
+					<LogoIcon width={ICON_SIZE} height={ICON_SIZE}/>
 					<span>Tetsu's portfolio</span>
 				</a>
 			</h1>
