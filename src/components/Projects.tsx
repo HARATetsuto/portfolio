@@ -5,7 +5,10 @@ const Projects: React.FC = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <p>Comming soon</p>
+
+      <div className="project-card">
+        <p>Comming soon</p>
+      </div>
     </section>
   )
 }
