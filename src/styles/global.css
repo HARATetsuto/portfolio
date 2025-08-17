@@ -142,3 +142,10 @@ header nav ul {
   flex-direction: column;
   align-items: center;
 }
+
+/* --- career part */
+#career {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
