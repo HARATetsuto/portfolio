@@ -10,12 +10,15 @@ body {
   margin: 0;
 }
 
+/* --- Header part --- */
 header {
+  /* positioon */
   position: fixed;
   top: 0;
   width: 100%;
+  height: 90px;
   background-color: rgba(100, 100, 100, 0.5);
-
+  /* flex box */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,11 +28,11 @@ header nav ul {
   /* positioning */
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   list-style: none;
-  margin-right: 200px;
+  margin-right: 150px;
   /* fontsize */
-  font-size: x-large;
+  font-size: large;
 }
 
 #header-title {
@@ -45,8 +48,72 @@ header nav ul {
   background: #f0f0f0;
 }
 
+/* --- About part --- */
 #about {
+  /* position */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #e0e0e0;
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-left h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-left p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+@media (width <= 576px) {
+  .about-right img {
+  width: 60%;
+  }
+}
+
+@media (576px <= width <= 768px) {
+  .about-right img {
+  width: 90%;
+  }
+}
+
+@media (768px <= width <= 992px) {
+  .about-right img {
+  width: 90%;
+  }
+}
+
+@media (992px <= width <= 1200px) {
+  .about-right img {
+  width: 80%;
+  }
+}
+
+@media (1200px <= width <= 1400px) {
+  .about-right img {
+  width: 70%;
+  }
+}
+
+@media (1400px <= width) {
+  .about-right img {
+  width: 60%;
+  }
 }
 
 #skills {
