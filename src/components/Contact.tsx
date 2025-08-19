@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
+  console.log(form);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,17 +30,26 @@ const Contact = () => {
 
   return (
     <section id="contact">
+      <h2>Contact</h2>
+
       <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
 
-        <label>Your Email</label>
-        <input type="email" name="user_email" />
+        <div className="contact-container-above">
+          <label>Name</label>
+          <input type="text" name="name" />
 
-        <label>Message</label>
-        <input type="message" />
+          <label>Your Email</label>
+          <input type="email" name="email" />
+        </div>
 
-        <input type="submit" value="Send" />
+        <div className="contact-container-bottom">
+          <label>Message</label>
+          <textarea name="message" />
+        </div>
+
+        <input type="hidden" name="time" value={new Date().toISOString()} />
+
+        <input type="submit" value="Send" id="contact-send-btn"/>
       </form>
     </section>
   )

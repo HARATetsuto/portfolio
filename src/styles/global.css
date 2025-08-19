@@ -169,3 +169,47 @@ header nav ul {
   flex-direction: column;
   align-items: center;
 }
+
+/* contact part */
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container-above {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-container-bottom { 
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-container-bottom textarea{
+  width: 100%;
+  height: 200px;
+}
+
+.contact-container-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#contact-send-btn {
+  width: 100px;
+  height: 40px;
+  align-self: center;
+  margin-top: 10px;
+}
