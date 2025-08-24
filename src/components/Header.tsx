@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 			<h1>
 				<a href="/" id="header-title">
 					<LogoIcon width={ICON_SIZE} height={ICON_SIZE}/>
-					<span>Tetsu's portfolio</span>
+					<span>Tetsu&apos;s portfolio</span>
 				</a>
 			</h1>
 
