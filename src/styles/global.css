@@ -27,7 +27,6 @@ header {
 header nav ul {
   /* positioning */
   display: flex;
-  justify-content: center;
   gap: 50px;
   list-style: none;
   margin-right: 150px;
@@ -212,4 +211,25 @@ form {
   height: 40px;
   align-self: center;
   margin-top: 10px;
+}
+
+/* Footer part */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left-components {
+  display: flex;
+  margin-left: 50px;
+}
+
+footer nav ul {
+  /* positioning */
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin-right: 150px;
+  /* fontsize */
+  font-size: large;
 }
