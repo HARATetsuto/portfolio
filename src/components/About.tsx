@@ -8,7 +8,7 @@ const About: React.FC = () => {
       <div className="about-left">
         <h2>About Me</h2>
         <p>
-          Hello! I'm Tetsuto HARA, a passionate front-end developer.
+          Hello! I&apos;m Tetsuto HARA, a passionate front-end developer.
           I enjoy building clean, efficient, and user-friedly web applications.
         </p>
       </div>
