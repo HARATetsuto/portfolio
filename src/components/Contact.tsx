@@ -4,12 +4,30 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
-  console.log(form);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     if (!form.current) return;
+
+    // Check the input fields are filled
+    const formData = new FormData(form.current);
+    const name= formData.get("name");
+    const email= formData.get("email");
+    const message= formData.get("message");
+
+    if (!name || !email || !message) {
+      alert("Please fill in the fields!");
+      return;
+    }
+    
+    const confirmed = window.confirm(
+      `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n\nSend this message?`
+    );
+
+    if (!confirmed) {
+      // Cancel the process if canceled
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -20,10 +38,10 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          alert("SUCCESS!");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          alert(`FAILED... ${error.text}`);
         }
       );
   };
@@ -49,7 +67,7 @@ const Contact = () => {
 
         <input type="hidden" name="time" value={new Date().toISOString()} />
 
-        <input type="submit" value="Send" id="contact-send-btn"/>
+        <input type="submit" value="Send" id="contact-send-btn" />
       </form>
     </section>
   )
