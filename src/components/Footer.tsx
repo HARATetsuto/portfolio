@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer>
 
       <div className="left-components">
-				<a href="https://www.linkedin.com/in/tetsuto-hara-7822b5257/" target="_blank" id="header-title">
+				<a href="https://www.linkedin.com/in/tetsuto-hara-7822b5257/" target="_blank" rel="noreferrer" id="header-title">
 					<LinkedInIcon width={ICON_SIZE} height={ICON_SIZE}/>
 				</a>
       </div>
