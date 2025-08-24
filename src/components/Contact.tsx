@@ -11,15 +11,15 @@ const Contact = () => {
 
     // Check the input fields are filled
     const formData = new FormData(form.current);
-    const name= formData.get("name");
-    const email= formData.get("email");
-    const message= formData.get("message");
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
 
     if (!name || !email || !message) {
       alert("Please fill in the fields!");
       return;
     }
-    
+
     const confirmed = window.confirm(
       `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n\nSend this message?`
     );
@@ -53,16 +53,16 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail}>
 
         <div className="contact-container-above">
-          <label>Name</label>
-          <input type="text" name="name" />
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" id="name" />
 
-          <label>Your Email</label>
-          <input type="email" name="email" />
+          <label htmlFor="email">Your Email</label>
+          <input type="email" name="email" id="email" />
         </div>
 
         <div className="contact-container-bottom">
-          <label>Message</label>
-          <textarea name="message" />
+          <label htmlFor="message">Message</label>
+          <textarea name="message" id="message" />
         </div>
 
         <input type="hidden" name="time" value={new Date().toISOString()} />
