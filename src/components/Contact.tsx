@@ -1,6 +1,5 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -11,12 +10,12 @@ const Contact = () => {
 
     // Check the input fields are filled
     const formData = new FormData(form.current);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const message = formData.get("message");
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
 
     if (!name || !email || !message) {
-      alert("Please fill in the fields!");
+      alert('Please fill in the fields!');
       return;
     }
 
@@ -38,9 +37,9 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert("SUCCESS!");
+          alert('SUCCESS!');
         },
-        (error) => {
+        error => {
           alert(`FAILED... ${error.text}`);
         }
       );
@@ -51,7 +50,6 @@ const Contact = () => {
       <h2>Contact</h2>
 
       <form ref={form} onSubmit={sendEmail}>
-
         <div className="contact-container-above">
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" />
@@ -70,7 +68,7 @@ const Contact = () => {
         <input type="submit" value="Send" id="contact-send-btn" />
       </form>
     </section>
-  )
-}
+  );
+};
 
 export default Contact;

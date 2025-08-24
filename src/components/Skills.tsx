@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Skills: React.FC = () => {
   return (
@@ -6,9 +6,10 @@ const Skills: React.FC = () => {
       <h2>Skills</h2>
 
       <div className="skill-container">
-
         <div className="skill-card">
-          <h3><strong>Programming Languages</strong></h3>
+          <h3>
+            <strong>Programming Languages</strong>
+          </h3>
           <ul>
             <li>JavaScript ★★★☆☆</li>
             <li>TypeScript ★★☆☆☆</li>
@@ -18,7 +19,9 @@ const Skills: React.FC = () => {
         </div>
 
         <div className="skill-card">
-          <h3><strong>Frameworks & Libraries</strong></h3>
+          <h3>
+            <strong>Frameworks & Libraries</strong>
+          </h3>
           <ul>
             <li>React(with TypeScript) ★★☆☆☆</li>
             <li>Vite ★☆☆☆☆</li>
@@ -27,9 +30,10 @@ const Skills: React.FC = () => {
           </ul>
         </div>
 
-
         <div className="skill-card">
-          <h3><strong>Tools & Others</strong></h3>
+          <h3>
+            <strong>Tools & Others</strong>
+          </h3>
           <ul>
             <li>Git / GitHub ★★☆☆☆</li>
             <li>GitHub Actions (CI/CD) ★★☆☆☆</li>
@@ -39,16 +43,17 @@ const Skills: React.FC = () => {
         </div>
 
         <div className="skill-card">
-          <h3><strong>Languages</strong></h3>
+          <h3>
+            <strong>Languages</strong>
+          </h3>
           <ul>
             <li>English (Business - Intermediate)</li>
             <li>Japanese (Native)</li>
           </ul>
         </div>
-
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Skills;

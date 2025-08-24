@@ -1,5 +1,4 @@
-import React from "react";
-
+import React from 'react';
 
 const Projects: React.FC = () => {
   return (
@@ -10,7 +9,7 @@ const Projects: React.FC = () => {
         <p>Comming soon</p>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Projects;
